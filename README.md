@@ -12,6 +12,7 @@ The Tado-MQTT-exporter has the following functionality:
   * the setpoint for the zone in 30 minutes from now
   * the setpoint for the zone in one hour from now
 * For each zone, it will send Home Assistant MQTT discovery messages, allowing automatic setup of the three sensors for each zone.
+* The exporter limits Tado API calls by refreshing the zone list only once per 24 hours and the zone schedules every 8 hours. This can be configured through the configuration file, but please keep in mind that Tado kindly allows us to use the API but asks us to limit the number of calls. I think I have provided reasonable default settings as I am not expecting changes to zones or schedules to occur frequently.
 
 ## Prerequisites
 Please make sure you have the [paho-mqtt](https://pypi.org/project/paho-mqtt/) and [pyton-tado (PyTado)](https://pypi.org/project/python-tado/) libraries installed.
