@@ -1,0 +1,15 @@
+mqtt:
+  host: your.hostname
+  port: 1883
+  username: your.username
+  password: your.password
+  base_topic: tado
+  send_discovery: True
+
+tado:
+  token_file: /home/pi/.tado_refresh_token.json
+
+update_interval: 60              # interval bewteen MQTT publish in seconds (default 5 min)
+zones_refresh_hours: 24          # hours between Tado zones refresh via API (default 24)
+schedule_refresh_hours: 8        # hours between  schedule refreshes via API (default 8)
+logging_level: ERROR             # logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
