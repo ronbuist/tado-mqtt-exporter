@@ -15,7 +15,7 @@ The Tado-MQTT-exporter has the following functionality:
 * The exporter limits Tado API calls by refreshing the zone list only once per 24 hours and the zone schedules every 8 hours. This can be configured through the configuration file, but please keep in mind that Tado kindly allows us to use the API but asks us to limit the number of calls. I think I have provided reasonable default settings as I am not expecting changes to zones or schedules to occur frequently.
 
 ## Prerequisites
-Please make sure you have the [paho-mqtt](https://pypi.org/project/paho-mqtt/) and [pyton-tado (PyTado)](https://pypi.org/project/python-tado/) libraries installed.
+Please make sure you have the [paho-mqtt](https://pypi.org/project/paho-mqtt/) and [python-tado (PyTado)](https://pypi.org/project/python-tado/) libraries installed.
 
 ## Virtual environment
 I'm running this on a Raspberry Pi, which has a managed Python environment. Since there is no Debian package for installing PyTado, I have created a virtual environment and used Pip to install the libraries I needed.
